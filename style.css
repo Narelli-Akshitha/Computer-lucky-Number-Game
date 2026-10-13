@@ -1,0 +1,114 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#151515,#301B3F,#3C415C);
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:25px;
+    padding:20px;
+}
+
+h1:first-of-type{
+    color:#B4A5A5;
+    font-size:2.4rem;
+    text-align:center;
+    text-shadow:2px 2px 8px rgba(0,0,0,.5);
+}
+
+input{
+    width:280px;
+    padding:15px;
+    border:none;
+    border-radius:12px;
+    outline:none;
+    background:#3C415C;
+    color:#fff;
+    font-size:1.1rem;
+    text-align:center;
+    transition:.3s;
+    box-shadow:0 10px 20px rgba(0,0,0,.35);
+}
+
+input::placeholder{
+    color:#B4A5A5;
+}
+
+input:focus{
+    border:2px solid #B4A5A5;
+    transform:scale(1.03);
+}
+
+button{
+    width:180px;
+    padding:14px;
+    border:none;
+    border-radius:12px;
+    background:#301B3F;
+    color:#B4A5A5;
+    font-size:1rem;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+    box-shadow:0 10px 20px rgba(0,0,0,.35);
+}
+
+button:hover{
+    background:#B4A5A5;
+    color:#151515;
+    transform:translateY(-3px);
+}
+
+button:active{
+    transform:scale(.96);
+}
+
+#result{
+    width:90%;
+    max-width:650px;
+    min-height:80px;
+    background:rgba(180,165,165,.12);
+    backdrop-filter:blur(10px);
+    border:1px solid rgba(180,165,165,.25);
+    border-radius:18px;
+    padding:20px;
+    color:#fff;
+    text-align:center;
+    font-size:1.4rem;
+    line-height:1.6;
+    box-shadow:0 15px 30px rgba(0,0,0,.35);
+    transition:.3s;
+    word-wrap:break-word;
+}
+
+@media(max-width:600px){
+
+    h1:first-of-type{
+        font-size:1.8rem;
+    }
+
+    input{
+        width:100%;
+        max-width:320px;
+    }
+
+    button{
+        width:100%;
+        max-width:320px;
+    }
+
+    #result{
+        font-size:1.1rem;
+        padding:18px;
+    }
+}
